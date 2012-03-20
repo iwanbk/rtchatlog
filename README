@@ -1,0 +1,25 @@
+Realtime IRC Log with Gevent & Flask.
+
+It is a toy project to learn web push technology.
+Currently only support long-polling.
+See : http://rtchatlog.labhijau.net
+
+INSTALL
+easy_install lib/oyoyo-0.8.tar.gz
+easy_install http://code.google.com/p/gevent/downloads/detail?name=gevent-1.0b1.tar.gz&can=2&q=
+pip install -r requirements.txt
+
+RUNNING
+cd thebot
+rename botconf.py.template to botconf.py and fill nick & pasword
+python oyobot.py
+
+cd collector
+python flask-collector.py 5252
+
+cd rtlog
+python logpoll.py
+
+LICENSE 
+Copyright 2012
+BSD License
