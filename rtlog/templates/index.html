@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block body %}
+<h1>RTChatLog : Realtime IRC Log</h1>
+<p>
+Toy project to learn web push technology. Currently only use long-polling techique.<br>
+I create simple IRC bot that join to some public IRC channels. This bot will listen to all conversation,
+and send the message to rtchatlog server.<br>
+You can use #rtchatlog at irc.freenode.net as a test channel, and see the output in
+<a href="/rtview/irc.freenode.net/rtchatlog/">this page</a>
+</p>
+<h3>Realtime Log using Long-polling</h3>
+Use long polling technique from <a href="https://bitbucket.org/danjac/chatbox/">https://bitbucket.org/danjac/chatbox/</a>.<br>
+It use flask and gevent
+<ul>
+	<li><a href="/rtview/irc.freenode.net/gevent/">gevent@freenode</a></li>
+	<li><a href="/rtview/irc.freenode.net/django/">django@freenode</a></li>
+	<li><a href="/rtview/irc.freenode.net/pocoo/">pocoo@freenode</a></li>
+	<li><a href="/rtview/irc.freenode.net/go-nuts/">go-nuts@freenode</a></li>
+	<li><a href="/rtview/irc.freenode.net/python/">python@freenode</a></li>
+	<li><a href="/rtview/irc.freenode.net/rtchatlog/">rtchatlog@freenode</a></li>
+	<li><a href="/rtview/irc.freenode.net/diesel/">diesel@freenode</a></li>
+</ul>
+<h3>Archive</h3>
+<ul>
+	<li><a href="/raw_archive/">Raw Archive</a></li>
+</ul>
+{% endblock %}
