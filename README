@@ -5,16 +5,18 @@ Currently only support long-polling.
 See : http://rtchatlog.labhijau.net
 
 INSTALL
-easy_install http://code.google.com/p/gevent/downloads/detail?name=gevent-1.0b1.tar.gz&can=2&q=
 pip install -r requirements.txt
 
 RUNNING
-cd thebot
+[ircbot]
+#cd thebot
 edit user, nick, and password
 #go build bot.go
+#./bot
 
-cd rtlog
-python logpoll.py
+[longpoll server]
+#cd rtlog
+#python logpoll.py
 
 LICENSE 
 Copyright 2012
