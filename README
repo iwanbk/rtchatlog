@@ -2,7 +2,7 @@ Realtime IRC Log with Gevent & Flask.
 
 It is a toy project to learn web push technology.
 Currently only support long-polling.
-See : http://rtchatlog.labhijau.net
+See : http://rtchatlog.labhijau.net:8080
 
 INSTALL
 pip install -r requirements.txt

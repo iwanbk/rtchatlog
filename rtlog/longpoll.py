@@ -87,4 +87,4 @@ def update_chan(server, chan):
     return "???"
 
 if __name__ == "__main__":
-    WSGIServer(('127.0.0.1', 8080), app.wsgi_app).serve_forever()
+    WSGIServer(('0.0.0.0', 8080), app.wsgi_app).serve_forever()
